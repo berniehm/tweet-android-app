@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tweet</string>
+    <string name="welcomeLogin">login</string>
+    <string name="welcomeSignup">signup</string>
+    <string name="welcomeTitle">Welcome to TweetApp</string>
+    <string name="signupRegister">register</string>
+    <string name="loginTitle">Login to Tweet</string>
+    <string name="loginSubtitle">You must be registered</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginSignIn">Sign In</string>
+    <string name="menuLogout">Logout</string>
+    <string name="signupTitle">Sign up for the Tweet App</string>
+    <string name="signupSubtitle">Enter details below</string>
+    <string name="signupFirstName">First Name</string>
+    <string name="signupLastName">Last Name</string>
+    <string name="signupEmail">Email</string>
+    <string name="signupPassword">Password</string>
+</resources>
