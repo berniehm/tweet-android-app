@@ -22,4 +22,8 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
     }
+
+    public void registerpressed(View view) {
+        startActivity(new Intent(this, Tweet.class));//tweet
+    }
 }

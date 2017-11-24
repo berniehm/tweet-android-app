@@ -16,4 +16,5 @@
     <string name="signupLastName">Last Name</string>
     <string name="signupEmail">Email</string>
     <string name="signupPassword">Password</string>
+    <string name="tweetplaced">Tweet</string>
 </resources>

@@ -4,4 +4,6 @@
     <item name="lastName" type="id" />
     <item name="loginEmail" type="id" />
     <item name="loginPassword" type="id" />
+    <item name="settings" type="id">id</item>
+    <item name="menuLogout" type="id">id</item>
 </resources>
