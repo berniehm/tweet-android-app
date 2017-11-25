@@ -17,4 +17,16 @@
     <string name="signupEmail">Email</string>
     <string name="signupPassword">Password</string>
     <string name="tweetplaced">Tweet</string>
+    <string name="TotalSoFar" />
+    <string name="tweetButton">tweet></string>
+    <string name="Amount">strings</string>
+    <string name="Twitter" />
+    <string name="Direct" />
+    <string name="Facebook" />
+    <string name="tweetTitle">strings</string>
+    <string name="tweetSubtitle" />
+    <string name="reportTitle">strings</string>
+    <string name="menuTweet">strings</string>
+    <string name="menuSettings">strings</string>
+    <string name="menuReport">strings</string>
 </resources>

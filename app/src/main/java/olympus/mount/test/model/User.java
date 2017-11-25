@@ -1,4 +1,10 @@
-package model;
+package olympus.mount.test.model;
+
+/**This class will contain the users details for example their name
+ * and email and password
+ * Created by berni on 11/22/17
+ */
+
 
 /**This class will contain the users details for example their name
  * and email and password

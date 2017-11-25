@@ -6,4 +6,20 @@
     <item name="loginPassword" type="id" />
     <item name="settings" type="id">id</item>
     <item name="menuLogout" type="id">id</item>
+    <item name="menuReport" type="id">strings</item>
+    <item name="menuSettings" type="id" />
+    <item name="menuDonate" type="id">strings</item>
+    <item name="menuTweet" type="id" />
+    <item name="amountPicker" type="id">strings</item>
+    <item name="amountTotal" type="id" />
+    <item name="progressBar" type="id">strings</item>
+    <item name="tweetButton" type="id">strings</item>
+    <item name="twitter" type="id">strings</item>
+    <item name="row_amount" type="id">strings</item>
+    <item name="row_method" type="id" />
+    <item name="reportList" type="id" />
+    <item name="accept" type="id">strings</item>
+    <item name="tweets" type="id">strings</item>
+    <item name="tweet" type="id">strings</item>
+    <item name="report" type="id" />
 </resources>

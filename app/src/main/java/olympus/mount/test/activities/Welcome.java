@@ -1,10 +1,11 @@
-package olympus.mount.test;
+package olympus.mount.test.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
+import olympus.mount.test.R;
 
 public class Welcome extends AppCompatActivity {
 
