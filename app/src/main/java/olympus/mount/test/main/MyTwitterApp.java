@@ -6,9 +6,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import olympus.mount.test.activities.Tweet;
 import olympus.mount.test.model.User;
-import olympus.mount.test.model.Tweets;
+import olympus.mount.test.model.Tweet;
 /**
  * Created by berni on 11/22/2017.
  */
@@ -19,10 +18,10 @@ public class MyTwitterApp extends Application{
 
     public final int target = 10000;
     public int totalTweeted = 0;
-    public List<Tweets> tweets = new ArrayList<Tweets>();
+    public List<Tweet> tweets = new ArrayList<Tweet>();
     public List<User>     users     = new ArrayList<User>();
 
-    public boolean newTweet(Tweets tweets) {
+    public boolean newTweet(Tweet tweets) {
         boolean targetAchieved = totalTweeted > target;
 
         if(!targetAchieved) {
@@ -41,7 +40,7 @@ public class MyTwitterApp extends Application{
     public void onCreate()
     {
         super.onCreate();
-        Log.v("Tweet","Tweet App Started");
+        Log.v("TweetActivities","TweetActivities App Started");
     }
 
     public void newUser(User user)

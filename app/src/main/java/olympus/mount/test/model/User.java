@@ -5,13 +5,6 @@ package olympus.mount.test.model;
  * Created by berni on 11/22/17
  */
 
-
-/**This class will contain the users details for example their name
- * and email and password
- * Created by berni on 11/22/17
- */
-
-
 public  class User {
     public String firstName;
     public String lastName;

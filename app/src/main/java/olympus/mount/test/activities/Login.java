@@ -26,17 +26,17 @@ public class Login extends AppCompatActivity {
     {
         MyTwitterApp app = (MyTwitterApp) getApplication();
 
-        TextView email     = (TextView)  findViewById(R.id.loginEmail);
-        TextView password  = (TextView)  findViewById(R.id.loginPassword);
+        TextView email     = (TextView)  findViewById(R.id.Email);
+        TextView password  = (TextView)  findViewById(R.id.Password);
 
         if (app.validUser(email.getText().toString(), password.getText().toString()))
         {
-            startActivity (new Intent(this, Tweet.class));
+            startActivity (new Intent(this, TweetActivities.class));
         }
         else
         {
-            Toast toast = Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT);
-            toast.show();
+           Toast toast = Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT);
+           toast.show();
         }
     }
 }

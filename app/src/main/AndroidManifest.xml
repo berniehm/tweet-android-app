@@ -29,7 +29,7 @@
             android:name=".activities.Signup"
             android:label="@string/app_name"/>
         <activity
-            android:name=".activities.Tweet"
+            android:name=".activities.TweetActivities"
             android:label="@string/app_name">
 
         </activity>

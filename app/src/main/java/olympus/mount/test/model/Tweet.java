@@ -5,16 +5,16 @@ package olympus.mount.test.model;
  */
 
 
-public class Tweets {
+public class Tweet {
 
     public int amount;
     public String method;
 
-    public Tweets (int amount, String method) {
+    public Tweet(int amount, String method) {
         this.amount = amount;
         this.method = method;
     }
 
-    public void add() {
+    public void add() { //To do
     }
 }

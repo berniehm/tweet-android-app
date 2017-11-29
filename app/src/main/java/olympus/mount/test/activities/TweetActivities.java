@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
@@ -18,13 +17,12 @@ import android.widget.Toast;
 
 import olympus.mount.test.R;
 import olympus.mount.test.main.MyTwitterApp;
-import olympus.mount.test.model.Tweets;
 
 /**
  * Created by berni on 11/22/2017.
  */
 
-public class Tweet extends AppCompatActivity implements View.OnClickListener {
+public class TweetActivities extends AppCompatActivity implements View.OnClickListener {
     private int target = 240;
     private ProgressBar progressBar;
     private MyTwitterApp app;
@@ -90,7 +88,7 @@ public class Tweet extends AppCompatActivity implements View.OnClickListener {
         }
 
         if (tweetedAmount > 0) {
-            app.newTweet(new Tweets(tweetedAmount, method));
+            app.newTweet(new olympus.mount.test.model.Tweet(tweetedAmount, method));
             progressBar.setProgress(app.totalTweeted);
             String totalTweetedStr = "$" + app.totalTweeted;
             amountTotal.setText(totalTweetedStr);

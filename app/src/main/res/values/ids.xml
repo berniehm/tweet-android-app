@@ -22,4 +22,5 @@
     <item name="tweets" type="id">strings</item>
     <item name="tweet" type="id">strings</item>
     <item name="report" type="id" />
+    <item name="tweetsTitle" type="id">strings</item>
 </resources>
