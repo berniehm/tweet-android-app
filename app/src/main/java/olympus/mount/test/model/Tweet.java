@@ -15,6 +15,6 @@ public class Tweet {
         this.method = method;
     }
 
-    public void add() { //To do
+    public void add() { //Todo
     }
 }

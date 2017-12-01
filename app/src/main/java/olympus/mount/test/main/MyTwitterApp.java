@@ -20,6 +20,7 @@ public class MyTwitterApp extends Application{
     public int totalTweeted = 0;
     public List<Tweet> tweets = new ArrayList<Tweet>();
     public List<User>     users     = new ArrayList<User>();
+    public int totalTweeeted;
 
     public boolean newTweet(Tweet tweets) {
         boolean targetAchieved = totalTweeted > target;

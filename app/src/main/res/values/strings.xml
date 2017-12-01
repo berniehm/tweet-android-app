@@ -20,13 +20,15 @@
     <string name="TotalSoFar" />
     <string name="tweetButton">tweet></string>
     <string name="Amount">strings</string>
-    <string name="Twitter" />
-    <string name="Direct" />
-    <string name="Facebook" />
-    <string name="tweetTitle">strings</string>
+    <string name="Twitter" >tweet</string>
+    <string name="Direct" >tweet</string>
+    <string name="Facebook" >Facebook</string>
+    <string name="tweetTitle">tweet</string>
     <string name="tweetSubtitle" />
-    <string name="reportTitle">strings</string>
-    <string name="menuTweet">strings</string>
-    <string name="menuSettings">strings</string>
-    <string name="menuReport">strings</string>
+    <string name="reportTitle">report</string>
+    <string name="menuTweet">tweet</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuReport">Report</string>
+    <string name="defaultAmount">00</string>
+    <string name="defaultMethod">N/A</string>
 </resources>

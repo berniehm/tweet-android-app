@@ -1,5 +1,6 @@
 package olympus.mount.test.activities;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,47 +19,41 @@ import android.widget.Toast;
 import olympus.mount.test.R;
 import olympus.mount.test.main.MyTwitterApp;
 
-/**
- * Created by berni on 11/22/2017.
- */
+ public  class TweetActivities extends AppCompatActivity implements View.OnClickListener{
 
-public class TweetActivities extends AppCompatActivity implements View.OnClickListener {
-    private int target = 240;
+    private int target = 10000;
+    private RadioGroup paymentMethod;
     private ProgressBar progressBar;
-    private MyTwitterApp app;
+    private NumberPicker amountPicker;
+    private EditText amountText;
     private TextView amountTotal;
     private Button tweetButton;
-    private NumberPicker amountPicker;
-    public int amount;
-    private EditText amountText;
-    private RadioGroup tweetMethod;
+    private MyTwitterApp app;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tweet);
 
-        app = (MyTwitterApp)            getApplication();
-        amountPicker = (NumberPicker)   findViewById(R.id.amountPicker);
-        amountTotal = (TextView)        findViewById(R.id.amountTotal);
-        progressBar = (ProgressBar)     findViewById(R.id.progressBar);
-        amountTotal = (TextView)        findViewById(R.id.amountTotal);
-
-        tweetButton = (Button)          findViewById(R.id.tweetButton);
+        app           = (MyTwitterApp)getApplication();
+        paymentMethod = (RadioGroup)   findViewById(R.id.paymentMethod);
+        progressBar   = (ProgressBar)  findViewById(R.id.progressBar);
+        amountPicker  = (NumberPicker) findViewById(R.id.amountPicker);
+        amountTotal   = (TextView)     findViewById(R.id.amountTotal);
+        amountText    = (EditText)     findViewById(R.id.amountText);
+        tweetButton  = (Button)       findViewById(R.id.tweetButton);
 
         amountPicker.setMinValue(0);
-        amountPicker.setMaxValue(240);
+        amountPicker.setMaxValue(1000);
         progressBar.setMax(target);
-        tweetButton.setOnClickListener( this);
+        tweetButton.setOnClickListener(this);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch (item.getItemId())
         {
-            case R.id.report:
-            startActivity(new Intent(this, Report.class));
-            break;
             case R.id.menuReport:   startActivity(new Intent(this, Report.class));
                 break;
             case R.id.menuSettings: Toast.makeText(this, "Settings Selected", Toast.LENGTH_SHORT).show();
@@ -77,8 +72,9 @@ public class TweetActivities extends AppCompatActivity implements View.OnClickLi
         return super.onCreateOptionsMenu(menu);
     }
 
-    public void tweetButtonPressed(View view) {
-        String method = tweetMethod.getCheckedRadioButtonId() == R.id.twitter ? "twitter" : "Facebook";
+    public void tweetButtonPressed(View view)
+    {
+        String method = paymentMethod.getCheckedRadioButtonId() == R.id.payPal ? "" : "Direct";
 
         int tweetedAmount = amountPicker.getValue();
         if (tweetedAmount == 0) {
@@ -87,21 +83,12 @@ public class TweetActivities extends AppCompatActivity implements View.OnClickLi
                 tweetedAmount = Integer.parseInt(text);
         }
 
-        if (tweetedAmount > 0) {
-            app.newTweet(new olympus.mount.test.model.Tweet(tweetedAmount, method));
-            progressBar.setProgress(app.totalTweeted);
-            String totalTweetedStr = "$" + app.totalTweeted;
-            amountTotal.setText(totalTweetedStr);
-            amountPicker.setValue(0);
-            amountText.setText("");
-        }
     }
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.tweetButton:
-                tweetButtonPressed(v);
-        }
-    }
-}
-
+     @Override
+     public void onClick(View v) {
+         switch (v.getId())
+         {
+             case R.id.tweetButton: tweetButtonPressed(v);
+         }
+     }
+ }
