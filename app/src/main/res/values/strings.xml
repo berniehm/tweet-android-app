@@ -31,4 +31,11 @@
     <string name="menuReport">Report</string>
     <string name="defaultAmount">00</string>
     <string name="defaultMethod">N/A</string>
+    <string name="my_hint">strings</string>
+    <string name="tweet_hint">strings</string>
+    <string name="tweet_date">strings</string>
+    <string name="istweeted">strings</string>
+    <string name="status" />
+    <string name="tweet">tweet</string>
+    <string name="spinner">user</string>
 </resources>

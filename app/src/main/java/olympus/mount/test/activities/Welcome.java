@@ -16,7 +16,7 @@ public class Welcome extends AppCompatActivity {
     }
 
     public void signupPressed(View view) {
-        startActivity(new Intent(this, Signup.class));//tweet
+        startActivity(new Intent(this, Signup.class));
     }
     public void loginPressed (View view)
     {

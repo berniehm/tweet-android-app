@@ -18,9 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.Report"
-            android:label="@string/app_name" />
+
 
         <activity
             android:name=".activities.Login"
@@ -30,6 +28,10 @@
             android:label="@string/app_name"/>
         <activity
             android:name=".activities.TweetActivities"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".activities.TweetListActivity"
             android:label="@string/app_name">
 
         </activity>

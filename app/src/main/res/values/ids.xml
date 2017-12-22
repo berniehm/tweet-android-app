@@ -23,4 +23,12 @@
     <item name="report" type="id">report</item>
     <item name="tweetsTitle" type="id">tweet</item>
     <item name="facebook" type="id">facebook</item>
+    <item name="istweeted" type="id">strings</item>
+    <item name="tweetList" type="id">strings</item>
+    <item name="spinner" type="id">strings</item>
+    <item name="tweetMethod" type="id">strings</item>
+    <item name="tweets_list_item_dateTextView" type="id" />
+    <item name="tweet_list_item_is_tweeted" type="id">strings</item>
+
+
 </resources>
